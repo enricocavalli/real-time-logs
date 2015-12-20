@@ -4,8 +4,8 @@ my @caches = qw /193.206.139.45 193.206.140.45/;
 
 my $REGEX='^(?<host>[^ ]*) [^ ]* (?<user>[^ ]*) \[(?<time>[^\]]*)\] "(?<method>\S+)(?: +(?<path>[^ ]*) +\S*)?" (?<code>[^ ]*) (?<size>[^ ]*)(?: "(?<referer>[^"]*)" "(?<agent>[^"]*)")? RTT (?<rtt>[0-9]+) (?<as>AS[0-9]+)$';
 
-my $esclusioni = '/ubuntu/|/freerainbowtables/';
-#my $esclusioni = '';
+#my $esclusioni = '/ubuntu/|/freerainbowtables/';
+my $esclusioni = '';
 
 select STDIN; $|=1; 
 select STDOUT; $|=1;
